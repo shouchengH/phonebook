@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int main(void)
 {
+    //printf("pid : %d\n", getpid());
     FILE *fp = fopen("orig.txt", "r");
     FILE *output = fopen("output.txt", "w");
     if (!fp) {
